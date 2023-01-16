@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "firstname": "Kyle",
+      "lastname": "Snow",
+      "username": "ksnow13",
+      "password": "ks1232",
+      "id": 1
+    },
+    {
+      "firstname": "Tyler",
+      "lastname": "Power",
+      "username": "Tpow",
+      "password": "Keyin2021",
+      "id": 2
+    },
+    {
+      "firstname": "ken",
+      "lastname": "ken",
+      "username": "kenken",
+      "password": "ccc",
+      "id": 3
+    },
+    {
+      "firstname": "bary",
+      "lastname": "bones",
+      "username": "bbones",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "firstname": "sarah",
+      "lastname": "dawn",
+      "username": "sd13",
+      "password": "4321",
+      "id": 5
+    }
+  ]
+}

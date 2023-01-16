@@ -1,4 +1,10 @@
 /*
+Kyle Snow
+Keyin Collage
+Jan 14 2023
+*/
+
+/*
 The Node.js core API is built around a concept in which
 certain kinds of objects called “emitters” emit named events
 that cause Function objects "listeners" to be called.
@@ -17,12 +23,13 @@ class MyEmitter extends EventEmitter {}
 const myEmitter = new MyEmitter();
 
 // creating the function that gets called when the event gets emitted
-
 myEmitter.on("event", () => {
   console.log("The first event has been called and ocurred ! ");
   console.log("The second event will occur in...");
 
   var count = 3;
+
+  // creating a countdown for second event to start
 
   setTimeout(() => {
     console.log(count);
@@ -39,21 +46,26 @@ myEmitter.on("event", () => {
   }, 3000);
 });
 
+// raising the first event
 myEmitter.emit("event");
 
-//-----------------------------------------------------------
+// creating a function for the second and third event
 
-function c1() {
+function action2() {
   console.log("The second event occurred!");
 }
 
-function c2() {
+function action3() {
   console.log("yet another event occurred!");
 }
 
-myEmitter.on("eventOne", c1);
-myEmitter.on("eventOne", c2);
+//calling the second event
+myEmitter.on("eventTwo", action2);
 
+//calling another function for the second event
+myEmitter.on("eventTwo", action3);
+
+//raising the second event
 setTimeout(() => {
-  myEmitter.emit("eventOne");
+  myEmitter.emit("eventTwo");
 }, 4000);
